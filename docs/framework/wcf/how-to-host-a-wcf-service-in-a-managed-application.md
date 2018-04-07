@@ -1,5 +1,5 @@
 ---
-title: "How to: Host a WCF Service in a Managed Application"
+title: "How to: Host a WCF Service in a Console Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -20,7 +20,7 @@ manager: "wpickett"
 ms.workload: 
   - "dotnet"
 ---
-# How to: Host a WCF Service in a Managed Application
+# How to: Host a WCF Service in a Console Application
 To host a service inside a managed application, embed the code for the service inside the managed application code, define an endpoint for the service either imperatively in code, declaratively through configuration, or using default endpoints, and then create an instance of <xref:System.ServiceModel.ServiceHost>.  
   
  To start receiving messages, call <xref:System.ServiceModel.ICommunicationObject.Open%2A> on <xref:System.ServiceModel.ServiceHost>. This creates and opens the listener for the service. Hosting a service in this way is often referred to as "self-hosting" because the managed application is doing the hosting work itself. To close the service, call <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=nameWithType> on <xref:System.ServiceModel.ServiceHost>.  
